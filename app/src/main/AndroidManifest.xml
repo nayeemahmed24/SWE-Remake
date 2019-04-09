@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.swe">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/smicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".HomePage"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme.Light" />
+        <activity
+            android:name=".Register_Basic"
+            android:theme="@style/AppTheme.Light"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration_Profile"
+            android:theme="@style/AppTheme.Light" />
+        <activity android:name=".CR_class_schedule" />
+        <activity android:name=".C_R_Panel" />
+        <activity
+            android:name=".SplasScreen"
+            android:theme="@style/AppTheme.Light">
+
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme.Light" />
+        <activity android:name=".Group_messege" />
+        <activity android:name=".Batch_16" />
+        <activity android:name=".Batch_17" />
+        <activity
+            android:name=".Pop_up_class_adder"
+            android:label="Select Schedule"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".Show_Profile" />
+        <activity
+            android:name=".Notice_pop_up"
+            android:label="Post Notice"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".Notice_activity" />
+        <activity android:name=".allclass"></activity>
+        <activity android:name=".Show_day_list"></activity>
+        <activity android:name=".Pop_up_exam_adder"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            >
+
+        </activity>
+    </application>
+
+</manifest>

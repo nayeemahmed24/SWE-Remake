@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/my_profile"
+            android:icon="@drawable/ic_person_black_24d0p"
+            android:title="My Profile" />
+
+    </group>
+
+    <group android:id="@+id/group_menu">
+        <item android:id="@+id/class_routine"
+            android:title="Class Routine"
+            android:icon="@drawable/ic_today_black_24dp"/>
+
+    </group>
+
+    <item android:title="Batch List">
+        <menu>
+            <item android:id="@+id/batch_2016"
+                android:title="2016" />
+            <item android:id="@+id/batch_2017"
+                android:title="2017" />
+            <item android:id="@+id/batch_2018"
+                android:title="2018" />
+        </menu>
+    </item>
+    <group android:id="@+id/group_g">
+        <item android:id="@+id/group_msg"
+            android:title="Group Messege"
+            android:icon="@drawable/ic_group_black_24dp"
+            />
+
+    </group>
+
+    <group android:id="@+id/group_men">
+        <item android:id="@+id/notice"
+            android:title="Notice" />
+
+    </group>
+    <group android:id="@+id/groupmenu">
+        <item android:id="@+id/cr_panel"
+            android:title="C.R.Panel" />
+
+    </group>
+
+
+</menu>
